@@ -131,10 +131,14 @@ footer#footer
 
 Is important to begin with an idea of what goes where, and how it will be organized, this way assigning CSS and JS actions will be easier, specially on big applications, changing the structure on the future can be really hard.
 
+You can see my basic HTML structure here: http://aboutpage.herokuapp.com/site/step1
+
 Step 2 - CSS
 ---
 
 Now we will add some basic CSS to our structure, the idea is to sketch up the layout, the fonts, the size, colors and the overall structure before actually adding the code. Use the list of CSS properties and values that we learned and go creative.
+
+You can see some of the CSS tricks here: http://aboutpage.herokuapp.com/site/step2
 
 **Pro tips**
 
@@ -150,6 +154,6 @@ Now that our site looks like we want it and is layout we can add some content. R
 Step 4 - Brag
 ---
 
-Your site looks great, next class we will learn how to put it online to share it with friends.
+Your site looks great, next class we will learn how to put it online to share it with friends, family and coworkers.
 
 
