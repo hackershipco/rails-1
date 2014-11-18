@@ -1,0 +1,117 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Pacifico);
+/* line 20, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+div, section, footer, header, aside {
+  box-sizing: border-box;
+}
+
+/* line 23, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+}
+
+/* line 28, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5 {
+  font-family: Pacifico;
+}
+
+/* line 31, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+.clear {
+  clear: both;
+}
+
+/* line 35, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+header#header nav {
+  background: #626499;
+  padding: 10px;
+  margin: 0;
+  min-height: 2em;
+}
+/* line 40, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+header#header nav a {
+  float: left;
+  color: white;
+  margin: 4px 10px;
+}
+/* line 46, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+header#header .heroimage {
+  background-image: url("/header.jpg");
+  height: 300px;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: extend;
+  background-repeat: none;
+}
+/* line 53, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+header#header .heroimage p {
+  font-family: Pacifico;
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding-left: 1em;
+}
+
+/* line 65, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#content {
+  clear: both;
+  width: 100%;
+  border-top: 30px solid #80A1B3;
+  padding-top: 1em;
+  box-shadow: -1px -2px 10px rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+/* line 74, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#content .left {
+  float: left;
+  width: 20%;
+  padding-left: 1em;
+}
+/* line 78, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#content .left .avatar {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 400px;
+}
+/* line 83, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#content .left h1 {
+  color: #FF2659;
+}
+/* line 87, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#content .main {
+  float: left;
+  padding-left: 2em;
+  width: 80%;
+}
+/* line 91, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#content .main .introduction {
+  font-size: 1.3em;
+}
+/* line 94, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#content .main h3 {
+  color: #626499;
+}
+
+/* line 102, /Users/dvidsilva/code/hackership/class1/app/assets/stylesheets/application.css.scss */
+#footer .contact {
+  text-align: center;
+}
