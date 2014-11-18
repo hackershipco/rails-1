@@ -1,28 +1,146 @@
-== README
+Hi, welcome to hackership.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+On this class we're going to create our first full Rails site, it's going to be an about page with information about you, just like this:
 
-Things you may want to cover:
+This guide will walk you through the code and commands you need to execute, ask any questions you might have.
 
-* Ruby version
+The goal is to get acquainted with the basic HTML tags and some CSS properties and values.
 
-* System dependencies
+Summary
+---
 
-* Configuration
+With this guide we will:
 
-* Database creation
+- Create a Rails application
+- Create a controller and action
+- Route that action to be the homepage
+- Add Bootstrap to our site
+- Create a view based in one of the templates provided
+- Add images, fancy css
+- Push to github
 
-* Database initialization
+You can reference the code for this exercise in:
 
-* How to run the test suite
+- [source code](https://github.com/hackershipco/rails-1)
+- [specific steps](https://github.com/hackershipco/rails-1/commits/master)
+- [final version](http://aboutpage.herokuapp.com/)
 
-* Services (job queues, cache servers, search engines, etc.)
+Workshop
+---
 
-* Deployment instructions
+Using the commands that you learned create a new rails application in your projects folder.
 
-* ...
+Generate a controller called site with an action called main.
+
+Set the root on the routes.rb to site#main
+
+Onwards we will work on the `app/views/site/main.html.erb` file and the `app/assets/stylesheets/application.css.scss`. You might have to rename that las file from application.css.
+
+Basic HTML tags
+---
+
+An HTML tag is the basic construction block that makes websites, there are a lot of tags and custom tags can be defined, a tag is usually a word that's descriptive of what it contains. The goal is to create clean semantic HTML where the developers can see the page and understand what's going on and what goes where.
+
+A tag has the tag name and attributes, for example:
+```html
+<div class="class-selector" id="identifier" ></div>
+```
+
+In that case `div` is the tag or name of the element and `class,id` are attributes of that element. Most tags require a `</>` closure to mark where they end. A few of them don't, particularly : *br*,*input* and *img*. Classes and ids are special attributes that are used to reference the element from the CSS or JS, classes nad ids can be any string that starts with a letter. An element can have several classes and a class can be in many elements, but only one element should have a particular id and every element can only have one id.
+
+Block elements are those that ocuppy all the width of their container by default, inline elements only occupy whatever space they need.
+
+- [head](http://www.w3schools.com/tags/tag_head.asp) is where definitions about the document are located, and links to other resources.
+- [body](http://www.w3schools.com/tags/tag_body.asp) is where the actual content of the page that will be displayed goes.
+- [div](http://www.w3schools.com/tags/tag_div.asp) is a basic construction block, by default it will try to occupy the whole width of its container.
+- [p](http://www.w3schools.com/tags/tag_p.asp) is used to add text. It's a block element.
+- [h1](http://www.w3schools.com/tags/tag_h1.asp) h2, h3, h4 are used for headers/titles, they're usually used to mark sections. It's a block element.
+- [header](http://www.w3schools.com/tags/tag_header.asp) is used to denote the header, or top part of a section.
+- [nav](http://www.w3schools.com/tags/tag_nav.asp) use it for groups of links, like navigation bars.
+- [footer](http://www.w3schools.com/tags/tag_footer.asp) is used to denote the footer, or bottom part of a section.
+- [section](http://www.w3schools.com/tags/tag_section.asp) to mark a section of content in the page.
+- [a](http://www.w3schools.com/tags/tag_a.asp) use it to add a link to another page, the url goes in the href attribute.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Basic and special CSS
+---
+
+To declare css for an element use a selector, then add any amount of properties and values, add a `;` after every pair, for example:
+
+.class-something {
+  color: red;
+  background: yellow;
+  font-family: Comic Sans;
+  width: 20%;
+  height: 300px;
+  border: 1px solid blue;
+}
+
+As you can see most properties are clear what they do, when in doubt just google things like `width css`, or `background color css` and you will get an answer quickly.
+
+Some of the ones that are not so obvious or are special are:
+
+- **float: (left or right);** block level elements usually ocuppy the whole width of their container, but you can make them float to one side or another
+so they will behave similar to inline elements, floating elements stack after each other until they take over the row and use the next one. The difference with inline elements is that floating elements don't push the height of the container.
+
+- **border: (width) (solid, dashed, striped, dotted) (color);** to declare a border you need to add three values in this particular order.
+
+- **[background](http://www.w3schools.com/css/css_background.asp):** You can declare a background by just specifying a color, or an image url. Besides that there are additional things you can add, like where do you want the image to be positioned, how would the image behave when scrolling, should the image be repeated, what's the size of the image.
+
+- **[box-shadow](http://www.w3schools.com/cssref/css3_pr_box-shadow.asp):1px 1px 1px black;** it takes three values: horizontal size, vertical size, spread and color.
+
+- **border-radius:5px;** it will make the corners of the element rounded.
+
+- **clear:(both, left, right)** it will force a new row after float elements, or force the container to calculate their height.
+
+There are many many more but this will do for today.
+
+Step 1 - HTML
+---
+
+Let's create a basic HTML structure where to put all our information, based on the design and the HTML tags that you know.
+My suggested structure is:
+
+```
+header#header
+  nav
+    a
+  div.heroimage
+
+div#content
+  aside.left
+    img.picture
+    h1.name
+    p.title
+
+  div.main
+    h2.title
+    p.introduction
+
+    section#experience
+      h2.title
+
+      h3.subtitle
+      p.description
+
+  div.clear
+
+footer#footer
+  div.contact
+```
+
+Is important to begin with an idea of what goes where, and how it will be organized, this way assigning CSS and JS actions will be easier, specially on big applications, changing the structure on the future can be really hard.
+
+Step 2 - CSS
+---
+
+Now we will add some basic CSS to our structure, the idea is to sketch up the layout, the fonts, the size, colors and the overall structure before actually adding the code. Use the list of CSS properties and values that we learned and go creative.
+
+
+
+Step 3 - Content
+---
+
+Now that our site looks like we want it and is layout we can add some content. Replace the images with pictures from you, add text, work experience and your contact information.
+
+
