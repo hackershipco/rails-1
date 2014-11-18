@@ -136,11 +136,20 @@ Step 2 - CSS
 
 Now we will add some basic CSS to our structure, the idea is to sketch up the layout, the fonts, the size, colors and the overall structure before actually adding the code. Use the list of CSS properties and values that we learned and go creative.
 
+**Pro tips**
 
+To use placeholder images while doing the layout go to: http://placekitten.com/
+
+Add nicer fonts to your design: http://www.google.com/fonts
 
 Step 3 - Content
 ---
 
 Now that our site looks like we want it and is layout we can add some content. Replace the images with pictures from you, add text, work experience and your contact information.
+
+Step 4 - Brag
+---
+
+Your site looks great, next class we will learn how to put it online to share it with friends.
 
 
