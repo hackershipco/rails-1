@@ -5,6 +5,6 @@ class SiteController < ApplicationController
   def step2
   end
 
-  def step3
+  def main
   end
 end
