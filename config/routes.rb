@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  root 'site#step3'
+
+  get 'site/step1'
+
+  get 'site/step2'
+
+  get 'site/step3'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
